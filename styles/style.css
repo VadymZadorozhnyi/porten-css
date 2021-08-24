@@ -5,6 +5,7 @@ html, body {
     padding: 0;
 }
 
+/* navigation*/
 .toolbar {
     display: flex;
     justify-content: space-around;
@@ -54,14 +55,17 @@ html, body {
 
 .liked {
     margin: 70px;
+    cursor: pointer;
 }
 
 .personal-office {
     margin-left: 70px;
+    cursor: pointer;
 }
 
 .settings {
     margin-left: 100px;
+    cursor: pointer;
 }
 
 .navigation-buttons {
@@ -70,4 +74,43 @@ html, body {
 
 .pointer {
     cursor: pointer;
+}
+
+/*header*/
+.header {
+    background-image: url(../assets/pictures/main.jpg);
+    background-position: center;
+    width: fit-content;
+    height: 810px;
+}
+
+.text {
+    display: inline-block;
+    border: 4px solid var(--white);
+    text-align: center;
+    margin: 10% 35% 0% 40%;
+    padding: 100px 70px;
+    text-decoration-color: var(--white);
+}
+
+h4 {
+    font-size: 64px;
+    margin: 0px 0px;
+    color: var(--white);
+}
+
+.line1 {
+    margin-top: 0px;
+}
+.city {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    color: var(--white);
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 450px;
+    color: var(--white);
 }
