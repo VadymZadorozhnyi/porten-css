@@ -1,8 +1,73 @@
-@import url("colors.css");
+@import url("./colors.css");
 
-body {
+html, body {
     margin: 0;
     padding: 0;
-
 }
 
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 44px;
+    background: var(--black);
+    color: var(--gray);
+}
+
+.info {
+    display: flex;
+    justify-content: left;
+}
+
+.slach {
+    margin: 0px 10px;
+}
+
+.login {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: var(--gray);
+}
+
+.toolbar-row-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: var(--black-md);
+    color: var(--white);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logo-porten {
+    display: flex;
+    margin-right: 20px;
+    font-size: 60px;
+    font-style: bold;
+}
+
+.liked {
+    margin: 70px;
+}
+
+.personal-office {
+    margin-left: 70px;
+}
+
+.settings {
+    margin-left: 100px;
+}
+
+.navigation-buttons {
+    margin-right: 150px;
+}
+
+.pointer {
+    cursor: pointer;
+}
