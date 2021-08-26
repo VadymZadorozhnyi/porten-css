@@ -114,3 +114,70 @@ p {
     margin: 0px 450px;
     color: var(--white);
 }
+
+/*season*/
+.collection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.season {
+    width: 50%;
+    height: 500px;
+    background-color: var(--black);
+}
+
+.season-text {
+    font-size: 36px;
+    margin: 30px ;
+    text-align: center;
+    color: var(--white);
+}
+
+.line2 {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.clocks {
+    width: 215px;
+    border: 2px;
+    margin-left: 25px;
+    background-color: var(--black-md);
+}
+
+.clock-text {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 55px ;
+    color: var(--white);
+}
+/*new-collection*/
+.new-collection {
+    background-image: url(../assets/pictures/man-1.jpg);
+    width: 50%;
+}
+
+h3 {
+    font-size: 36px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 300px;
+}
+
+.line3 {
+    width: 150px;
+}
+
+.catalogue {
+    border: 2px solid var(--white);
+    margin: 0px 320px ;
+    text-align: center;
+    color: var(--white);
+} 
+
+.new-goods {
+    background-image: url(../assets/pictures/man-2.jpg);
+    width: 50%;
+    height: 600px;
+}
