@@ -177,12 +177,12 @@ h3 {
     cursor: pointer;
 } 
 
-/*new-goods*/
+/*collection-2018*/
 .about-collection {
     display: flex;
     justify-content: space-around;
 }
-.new-goods {
+.picture {
     background-image: url(../assets/pictures/man-2.jpg);
     width: 50%;
     height: 500px;
@@ -219,5 +219,43 @@ h3 {
     padding: 10px;
     color: var(--white);
     cursor: pointer;
+}
+
+/*new-goods*/
+.new-goods {
+    margin: 0px 0px;
+    background-color: var(--black);
+    height: 950px;
+}
+
+.new-goods-text {
+    text-align: center;
+    font-size: 36px;
+    color: var(--white);
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.line5 {
+    width: 200px;
+    margin-bottom: 50px ;
+}
+
+.clock {
+    width: 215px;
+}
+
+table {
+   margin: auto;
+} 
+th,td {
+    border: 5px solid var(--black);
+}
+th {
+    background-color: var(--black-md);
+   
+}
+td {
+    color: var(--white);
 }
 
