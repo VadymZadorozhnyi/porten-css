@@ -1,6 +1,7 @@
 :root {
     --black:#000;
-    --black-md:#191B1C;
+    --black-md:#0f0f0f;
+    --black-lt:#191B1C;
     --gray:#787878;
     --white:#ffff;
 }

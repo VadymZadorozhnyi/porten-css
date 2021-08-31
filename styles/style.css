@@ -36,7 +36,7 @@ html, body {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: var(--black-md);
+    background-color: var(--black-lt);
     color: var(--white);
 }
 
@@ -48,9 +48,9 @@ html, body {
 
 .logo-porten {
     display: flex;
+    font-style: bold;
     margin-right: 20px;
     font-size: 60px;
-    font-style: bold;
 }
 
 .liked {
@@ -109,8 +109,8 @@ h4 {
 }
 
 p {
-    font-size: 16px;
     text-align: center;
+    font-size: 16px;
     margin: 0px 450px;
     color: var(--white);
 }
@@ -128,9 +128,9 @@ p {
 }
 
 .season-text {
+    text-align: center;
     font-size: 36px;
     margin: 30px ;
-    text-align: center;
     color: var(--white);
 }
 
@@ -143,7 +143,7 @@ p {
     width: 215px;
     border: 2px;
     margin-left: 25px;
-    background-color: var(--black-md);
+    background-color: var(--black-lt);
 }
 
 .clock-text {
@@ -159,22 +159,24 @@ p {
 }
 
 h3 {
+    text-align: center;
     font-size: 36px;
     color: var(--white);
-    text-align: center;
-    margin-top: 300px;
+    margin-top: 260px;
 }
 
 .line3 {
     width: 150px;
+    margin-bottom: 50px;
 }
 
 .catalogue {
-    border: 2px solid var(--white);
-    margin: 0px 320px ;
     text-align: center;
-    color: var(--white);
+    border: 2px solid var(--white);
     cursor: pointer;
+    padding: 10px 12px;
+    margin: 0px 320px ;
+    color: var(--white);
 } 
 
 /*collection-2018*/
@@ -184,6 +186,7 @@ h3 {
 }
 .picture {
     background-image: url(../assets/pictures/man-2.jpg);
+    background-position: center;
     width: 50%;
     height: 500px;
 }
@@ -248,14 +251,129 @@ h3 {
 table {
    margin: auto;
 } 
+
 th,td {
     border: 5px solid var(--black);
 }
+
 th {
-    background-color: var(--black-md);
+    background-color: var(--black-lt);
    
 }
+
 td {
     color: var(--white);
 }
 
+/*brands*/
+.brands{
+    height: 300px;
+    background-color: var(--black-md);
+}
+
+.brands-text{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 36px;
+    color: var(--white);
+}
+
+.line6 {
+    width: 100px;
+    margin-top: 40px ;
+}
+
+.brands-logo {
+    width: 250px;
+}
+
+.brands-table {
+    margin-top: 50px;
+}
+
+.brands-name {
+    border: 10px solid var(--black-md);
+    background-color: var(--black-md);
+}
+
+/*footer*/
+.footer{
+    background-image: url(../assets/pictures/man3.jpg);
+    background-position: center;
+    height: 400px;  
+}
+
+.footer-info {
+    display: flex;
+}
+
+.about-shop {
+    margin: 80px 0px 100px 220px;  
+}
+
+.about-shop-header {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.shop {
+ margin: 80px 50px 50px 30px; 
+}
+
+.shop-header {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.about-shop-text {
+    color: var(--white);
+}
+
+.shop-button {
+    display: flex;
+    margin-bottom: 20px; 
+}
+
+button {
+    margin-left: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.jewerly {
+    width:200px ;
+}
+
+.email {
+    margin: 80px 220px 100px 50px;
+}
+
+.link-header {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.mail-text {
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.subscribe {
+    display: flex; 
+}
+
+input {
+    height: 30px;
+}
+
+.subscribe-button {
+    height: 37px;
+    background-color: var(--black);
+    color: var(--white); 
+}
