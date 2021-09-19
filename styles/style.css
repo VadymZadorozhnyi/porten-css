@@ -6,6 +6,7 @@ html, body {
     padding: 0;
 }
 
+
 /* navigation*/
 .toolbar {
     display: flex;
@@ -130,6 +131,7 @@ html, body {
 
 /*header*/
 .header {
+    
     background-image: url(../assets/pictures/main.jpg);
     background-position: center;
     width: fit-content;
@@ -161,6 +163,7 @@ h4 {
 }
 
 p {
+    
     font-family: var(--Sans);
     font-style:initial;
     text-align: center;
@@ -259,18 +262,29 @@ h3 {
 .about-collection {
     display: flex;
     justify-content: space-around;
-}
-.picture {
-    background-image: url(../assets/pictures/man-2.jpg);
-    background-position: center;
-    width: 50%;
     height: 500px;
+}
+@media screen and (max-width: 900px) {
+    .about-collection {
+        flex-direction: column;
+        height: 1000px;
+    }
+}
+
+.picture {
+    flex: 1;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
 }
 
 .collection-2018 {
+    flex: 1;
     background-color: var(--black);
-    width: 50%;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 .collection-2018-top {
@@ -285,7 +299,7 @@ h3 {
     margin-top: 30px;
 }
 
-.collection-2018-text {
+ .collection-2018-text {
     text-align: center;
     color: var(--white);
     margin: 50px 200px 50px 200px;
@@ -302,7 +316,7 @@ h3 {
 
 /*new-goods*/
 .new-goods {
-    margin: 0px 0px;
+    margin: 0px;
     background-color: var(--black);
     height: 950px;
 }
@@ -319,25 +333,20 @@ h3 {
     width: 200px;
     margin-bottom: 50px ;
 }
+.clock-price {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
 
 .clock {
+    margin: 5px;
+    background-color: var(--black-lt);
     width: 215px;
 }
-
-table {
-   margin: auto;
-} 
-
-th,td {
-    border: 5px solid var(--black);
-}
-
-th {
-    background-color: var(--black-lt);
-   
-}
-
-td {
+.clocks-text {
     color: var(--white);
 }
 
