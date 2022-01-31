@@ -1,77 +1,82 @@
 @import url("./fonts.css");
 @import url("./colors.css");
+@import url("./media.css");
 
 html, body {
     margin: 0;
     padding: 0;
 }
 
-
+.wrapper{
+    margin: 0 auto;
+    min-width: 320px;
+}
+@media and (max-width: 1000px){
+    .wrapper{
+        width: 100%;
+    }
+}
 /* navigation*/
+
 .toolbar {
+    width: 100%;
+    padding: 10px 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 44px;
-    width: 100%;
+    box-sizing: border-box;
     background: var(--black);
     color: var(--gray);
 }
+.menu {
+    display: none;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
 
-.toolbar>div { 
-    font-family: var(--Sans);
-    font-size: 15px;
 }
 
-.mobile {
-   flex: 1;
-   text-align: right;
-   margin-left: 50px;
-   padding-left: 30px;
+@media screen and (max-width: 800px){
+    .info {
+        display: none;
+    }
+    }
+
+.exit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+   
 }
 
-.number {
-    flex: 1;
-    text-align: left;
+ .number {
+     padding-left: 10px;
+    cursor: pointer;
+}
+.slach {
+    padding-left: 10px;
+}
+.slach1 {
+    padding-left: 10px;
+}
+
+.toolbar-text {
+    padding-left: 10px; 
+}
+
+
+.enter {
     padding-left: 10px;
     cursor: pointer;
 }
 
-.slach1 {
-    flex: 0;
-    text-align: center; 
-}
-
-.toolbar-text {
-    flex: 2;
-    text-align: center; 
-}
-
-.slach2 {
-    flex: 0;
-    text-align: center;
-}
-
-.exit {
-    flex: 2;
-    text-align: right;
-    padding-right: 10px;
-}
-
-.enter {
-    flex: 0;
-    cursor: pointer;
-}
-
-.slach3 {
-    flex: 0;
-    padding: 10px;
-}
-
 .registration {
-    flex: 0;
-    margin-right: 300px;
+    padding-left: 10px;
     cursor: pointer;
 }
 
@@ -82,6 +87,7 @@ html, body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
     font-family: var(--Sans);
     height: 80px;
     width: 100%;
@@ -92,42 +98,50 @@ html, body {
 
 
 .logo-porten {
-    flex: 2;
-    margin-left: 100px;
+    box-sizing: border-box; 
+    padding-left: 40px;
     font-family: var(--Jaffna);
     font-style: bold;
     font-size: 60px;
 }
+.panel {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    cursor: pointer;
+ 
+}
+@media screen and (max-width: 800px) {
+    .panel, .search {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        font-size: 300px;
+       
+ 
+    }
+    .toolbar-row-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+    
 
-.liked {
-    flex: 1;
-    text-align: right;
-    cursor: pointer;
+.panel > div {
+    box-sizing: border-box;
+    margin: 20px;
 }
 
-.personal-office {
-  flex: 1;
-  text-align: right;
-    cursor: pointer;
-}
 
-.settings {
- flex: 1;
- text-align: right;
-    cursor: pointer;
-}
-.shop {
-    flex: 0;
-    padding-bottom: 20px;
-    cursor: pointer;
-}
 .search {
-    flex: 0;
-    padding-top: 10px;
-    margin-right: 370px;
+    box-sizing: border-box; 
+    padding-right: 40px;
     cursor: pointer;    
 }
-
 
 /*header*/
 .header {
@@ -156,6 +170,7 @@ h4 {
 .line1 {
     margin-top: 0px;
 }
+
 .city {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     font-size: 22px;
@@ -163,7 +178,6 @@ h4 {
 }
 
 p {
-    
     font-family: var(--Sans);
     font-style:initial;
     text-align: center;
@@ -177,13 +191,6 @@ p {
     display: flex;
     flex-direction: row;
     height: 500px;
-}
-
-@media screen and (max-width: 900px) {
-    .collection {
-        flex-direction: column;
-        height: 1000px;
-    }  
 }
 
 .season {
@@ -217,6 +224,7 @@ p {
     margin-right: 55px ;
     color: var(--white);
 }
+
 /*new-collection*/
 .new-collection {
     flex:1;
@@ -264,12 +272,7 @@ h3 {
     justify-content: space-around;
     height: 500px;
 }
-@media screen and (max-width: 900px) {
-    .about-collection {
-        flex-direction: column;
-        height: 1000px;
-    }
-}
+
 
 .picture {
     flex: 1;
@@ -333,6 +336,7 @@ h3 {
     width: 200px;
     margin-bottom: 50px ;
 }
+
 .clock-price {
     display: flex;
     flex-flow: row wrap;
@@ -346,6 +350,7 @@ h3 {
     background-color: var(--black-lt);
     width: 215px;
 }
+
 .clocks-text {
     color: var(--white);
 }
