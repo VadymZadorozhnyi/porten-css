@@ -190,20 +190,20 @@ h4 {
 }
 @media screen and (max-width : 1000px) {
     .header-text {
-        display: none; 
+        padding: 0 200px; 
     }
 }
 @media screen and (max-width : 800px){ 
     .header {
         height: 500px;
     }
+    .header-text {
+        display: none;
+    }
 
 }
 
 /*season*/
-.banner {
-    
-}
 .collection {
     display: flex;
     flex-direction: row;
@@ -211,7 +211,7 @@ h4 {
 }
 
 .season {
-    flex:1;
+    flex: 1;
     background-color: var(--black);
 }
 
@@ -225,23 +225,51 @@ h4 {
 
 .line2 {
     width: 150px;
-    margin-bottom: 30px;
+    
+}
+.season-block {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 20px;
 }
 
 .clocks {
     width: 215px;
     border: 2px;
-    margin-left: 25px;
     background-color: var(--black-lt);
 }
 
-.clock-text {
-    display: flex;
-    justify-content: space-around;
-    margin-right: 55px ;
+.clock-name {
+    margin: 0;
     color: var(--white);
 }
-
+.price {
+    margin: 0;
+    color: var(--white);
+}
+@media screen and (max-width: 1274px){
+    .block3 {
+        display: none;
+    }
+    .season-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        
+    }
+}
+@media screen and (max-width: 800px){
+    .collection {
+        display: flex;
+        flex-direction: column;
+    }
+    .season-block{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+}
 /*new-collection*/
 .new-collection {
     flex:1;
@@ -255,7 +283,12 @@ h4 {
     right: 0;
     bottom: 0;
 }
-
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .new-collection .background-image {
     height: 100%; 
     width: 100%; 
@@ -266,7 +299,7 @@ h3 {
     text-align: center;
     font-size: 36px;
     color: var(--white);
-    margin-top: 260px;
+    margin-top: 150px;
 }
 
 .line3 {
@@ -274,14 +307,13 @@ h3 {
     margin-bottom: 50px;
 }
 
-.frame-catalogue{
-    position: absolute;
-    width: 40px;
-    height: 20px;
-    border: solid 2px var(--white);
-}
+
 .catalogue {
+    border: solid 2px var(--white);
+    text-align: center;
     padding: 10px 15px;
+    text-transform: uppercase;
+    background-color: rgba(5, 62, 77, 0.26);
     cursor: pointer;
     color: var(--white);
 } 
@@ -289,7 +321,7 @@ h3 {
 /*collection-2018*/
 .about-collection {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     height: 500px;
 }
 
@@ -297,8 +329,8 @@ h3 {
 .picture {
     flex: 1;
     background-position: center;
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
    
 }
@@ -306,11 +338,15 @@ h3 {
 .collection-2018 {
     flex: 1;
     background-color: var(--black);
-    width: 100%;
-    height: 100%;
+
+}
+.collection-2018-block {
+    display: flex;
+    flex-direction: column;
 }
 
 .collection-2018-top {
+    box-sizing: border-box;
     text-align: center;
     font-size: 36px;
     margin-top: 100px;
@@ -318,14 +354,16 @@ h3 {
 }
 
 .line4 {
+    box-sizing: border-box;
     width: 100px;
     margin-top: 30px;
 }
 
  .collection-2018-text {
+     box-sizing: border-box;
     text-align: center;
     color: var(--white);
-    margin: 50px 200px 50px 200px;
+    margin: 50px  50px ;
 }
 
 .collection-2018-look{
@@ -374,7 +412,18 @@ h3 {
 .clocks-text {
     color: var(--white);
 }
-
+@media screen and (max-width: 1510px) {
+    .new-goods {
+       
+    }
+    .clock-price{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        align-items: center;
+     
+    }
+}
 /*brands*/
 .brands{
     height: 300px;
