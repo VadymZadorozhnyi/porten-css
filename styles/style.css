@@ -270,6 +270,11 @@ h4 {
         justify-content: space-around;
     }
 }
+@media screen and (max-width: 450px){
+    .block2 {
+        display: none;
+    }
+}
 /*new-collection*/
 .new-collection {
     flex:1;
@@ -299,7 +304,7 @@ h3 {
     text-align: center;
     font-size: 36px;
     color: var(--white);
-    margin-top: 150px;
+   
 }
 
 .line3 {
@@ -317,22 +322,28 @@ h3 {
     cursor: pointer;
     color: var(--white);
 } 
-
+@media screen and (max-width: 800px) {
+    h3 {
+        margin-top:0px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .line3 {
+        margin-bottom:0px;
+    }
+}
 /*collection-2018*/
 .about-collection {
     display: flex;
     flex-direction: row;
     height: 500px;
 }
-
-
-.picture {
+.picture-block{
     flex: 1;
-    background-position: center;
-    height: 100%;
+}
+.picture{
+    height: 500px;
     width: 100%;
-    object-fit: cover;
-   
 }
 
 .collection-2018 {
@@ -343,11 +354,14 @@ h3 {
 .collection-2018-block {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .collection-2018-top {
     box-sizing: border-box;
     text-align: center;
+    text-transform: uppercase;
     font-size: 36px;
     margin-top: 100px;
     color: var(--white);
@@ -363,18 +377,25 @@ h3 {
      box-sizing: border-box;
     text-align: center;
     color: var(--white);
-    margin: 50px  50px ;
+    padding:  50px  50px ;
 }
 
 .collection-2018-look{
     border: 2px solid var(--white);
+    padding: 10px 15px;
     text-align: center;
-    margin: 0px 250px;
-    padding: 10px;
     color: var(--white);
     cursor: pointer;
 }
-
+@media screen and (max-width: 800px){
+    .about-collection{
+        display: flex;
+        flex-direction: column;
+    }
+    .picture {
+        height: auto;
+    }
+}
 /*new-goods*/
 .new-goods {
     margin: 0px;
@@ -397,33 +418,24 @@ h3 {
 
 .clock-price {
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
     align-content: center;
     margin-left: 300px;
     margin-right: 300px;
 }
-
+.clock-price.block-clock{
+    
+}
 .clock {
     margin: 5px;
     background-color: var(--black-lt);
-    width: 215px;
+   width: 215px;
 }
 
 .clocks-text {
     color: var(--white);
 }
-@media screen and (max-width: 1510px) {
-    .new-goods {
-       
-    }
-    .clock-price{
-        display: flex;
-        flex-flow: row wrap;
-        align-content: center;
-        align-items: center;
-     
-    }
-}
+
 /*brands*/
 .brands{
     height: 300px;
